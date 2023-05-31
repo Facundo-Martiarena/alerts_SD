@@ -14,7 +14,7 @@ function Home() {
     };
 
     const handleSensorRepairClick = () => {
-        window.location.href = 'http://localhost:3000/?departamento=Montevideo';
+        window.location.href = 'http://localhost:3001';
     };
     return (
         <div className="container">

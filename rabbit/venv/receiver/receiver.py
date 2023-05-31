@@ -1,9 +1,10 @@
+import json
 import smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+
 import pika
 from pymongo import MongoClient
-import json
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
 
 # Establece la conexión con RabbitMQ
 connection = pika.BlockingConnection(pika.ConnectionParameters('rabbitmq'))
@@ -12,7 +13,7 @@ channel = connection.channel()
 queue_name = 'queueName'
 channel.queue_declare(queue=queue_name)
 
-mongo_client = MongoClient('localhost', 27017)
+mongo_client = MongoClient('localhost', 27018)
 mongo_db = mongo_client['rabbitMQ']
 mongo_collection_alert = mongo_db['datos_alertados']
 mongo_collection_others = mongo_db['datos_no_alertados']
@@ -32,7 +33,8 @@ def callback(ch, method, properties, body):
         destinatario = 'facumartiarena1995@gmail.com'
         asunto = 'Alerta importante'
         mensaje = f'Se ha detectado una situación de alerta en el sistema, en el departamento: {departamento}, con una presión de {presion}.'
-        enviar_correo('sistemas.distribuidos2023@gmail.com', destinatario, asunto, mensaje, 'auth0.json')
+        enviar_correo('sistemas.distribuidos2023@gmail.com',
+                      destinatario, asunto, mensaje, 'auth0.json')
 
     else:
         collection = mongo_db['no_alertados']
