@@ -14,8 +14,7 @@ function Home() {
     };
 
     const handleSensorRepairClick = () => {
-        // Lógica para redirigir a la página de reparación de sensores
-        // history("/sensor-repair");
+        window.location.href = 'http://localhost:3000/?departamento=Montevideo';
     };
     return (
         <div className="container">
@@ -34,7 +33,7 @@ function Home() {
                         Ver Dashboard
                     </Button>
                     <Button variant="secondary" onClick={handleSensorRepairClick}>
-                        Arreglo de Sensores
+                        Ver Cañerias alertadas
                     </Button>
                 </div>
 

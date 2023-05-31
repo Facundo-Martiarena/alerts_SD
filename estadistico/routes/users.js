@@ -3,8 +3,8 @@ var router = express.Router();
 const { MongoClient } = require('mongodb');
 
 const app = express();
-const port = 4000;
-const mongoUrl = 'mongodb://localhost:27017';
+const port = 4001;
+const mongoUrl = 'mongodb://localhost:27018';
 const dbName = 'rabbitMQ';
 const collectionName = 'datos';
 const path = require('path');
@@ -17,7 +17,7 @@ app.listen(port, () => {
 });
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
+router.get('/', function (req, res, next) {
   res.send('respond with a resource');
 });
 
@@ -32,7 +32,7 @@ app.get('/data', async (req, res) => {
     const client = await MongoClient.connect(mongoUrl);
     const db = client.db(dbName);
     const collection = db.collection(collectionName);
-    const data = await collection.find({estado:'alertado'}).toArray();
+    const data = await collection.find({ estado: 'alertado' }).toArray();
 
     client.close();
     res.json(data);
@@ -50,8 +50,8 @@ app.put('/data/:id', async (req, res) => {
     const db = client.db(dbName);
     const collection = db.collection(collectionName);
     const result = await collection.updateOne(
-        { _id: String(id) },
-        { $set: { estado: 'done' } }
+      { _id: String(id) },
+      { $set: { estado: 'done' } }
     );
     client.close();
     res.json(result);
@@ -63,7 +63,7 @@ app.put('/data/:id', async (req, res) => {
 
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
+router.get('/', function (req, res, next) {
   res.send('respond with a resource');
 });
 
