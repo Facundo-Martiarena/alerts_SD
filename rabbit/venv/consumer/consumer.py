@@ -1,9 +1,10 @@
+import json
 import smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+
 import pika
 from pymongo import MongoClient
-import json
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
 
 # Establece la conexión con RabbitMQ
 connection = pika.BlockingConnection(pika.ConnectionParameters(host='localhost'))
@@ -12,7 +13,7 @@ channel = connection.channel()
 queue_name = 'requests'
 channel.queue_declare(queue=queue_name)
 
-mongo_client = MongoClient('localhost', 27017)
+mongo_client = MongoClient('localhost', 27018)
 mongo_db = mongo_client['rabbitMQ']
 
 
