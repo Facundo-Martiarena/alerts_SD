@@ -6,16 +6,14 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 # Establece la conexión con RabbitMQ
-connection = pika.BlockingConnection(pika.ConnectionParameters('rabbitmq'))
+connection = pika.BlockingConnection(pika.ConnectionParameters(host='localhost'))
 channel = connection.channel()
 
-queue_name = 'queueName'
+queue_name = 'requests'
 channel.queue_declare(queue=queue_name)
 
 mongo_client = MongoClient('localhost', 27017)
 mongo_db = mongo_client['rabbitMQ']
-mongo_collection_alert = mongo_db['datos_alertados']
-mongo_collection_others = mongo_db['datos_no_alertados']
 
 
 def callback(ch, method, properties, body):
@@ -24,15 +22,13 @@ def callback(ch, method, properties, body):
     departamento = data.get('departamento')
     print(f"presión: {presion} en el departamento: {departamento}")
 
-    print("Versión de smtplib:", smtplib.__version__)
-
     if presion < 50:
         collection = mongo_db[departamento + '_alerta_presion']
         # Ejemplo de uso
         destinatario = 'facumartiarena1995@gmail.com'
         asunto = 'Alerta importante'
         mensaje = f'Se ha detectado una situación de alerta en el sistema, en el departamento: {departamento}, con una presión de {presion}.'
-        enviar_correo('sistemas.distribuidos2023@gmail.com', destinatario, asunto, mensaje, 'auth0.json')
+        send_mail('sistemas.distribuidos2023@gmail.com', destinatario, asunto, mensaje)
 
     else:
         collection = mongo_db['no_alertados']
@@ -44,7 +40,7 @@ def callback(ch, method, properties, body):
     print("Mensaje recibido y procesado exitosamente")
 
 
-def enviar_correo(sender, receiver, subject, message, credentials_file):
+def send_mail(sender, receiver, subject, message):
     code = "huoxjemlwiopgwnr"
 
     # Configuración del mensaje

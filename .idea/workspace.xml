@@ -1,7 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="067f3488-d4da-44a4-b312-63f6d5247217" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estadistico/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/estadistico/routes/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/login/node_modules/.cache/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/node_modules/.cache/default-development/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/login/node_modules/.cache/default-development/0.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/node_modules/.cache/default-development/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/login/node_modules/.cache/default-development/1.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/node_modules/.cache/default-development/2.pack" beforeDir="false" afterPath="$PROJECT_DIR$/login/node_modules/.cache/default-development/2.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/node_modules/.cache/default-development/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/login/node_modules/.cache/default-development/index.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/node_modules/.cache/default-development/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/login/node_modules/.cache/default-development/index.pack.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/login/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/login/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/login/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/components/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbit/venv/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit/venv/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbit/venv/receiver/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit/venv/consumer/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbit/venv/receiver/auth0.json" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit/venv/consumer/auth0.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbit/venv/receiver/receiver.py" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit/venv/consumer/consumer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbit/venv/receiver/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit/venv/consumer/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbit/venv/sender/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit/venv/producer/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbit/venv/sender/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit/venv/producer/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbit/venv/sender/sender.py" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit/venv/producer/producer.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2QZUgTT8ZBeTS26sBfrSSe4tge0" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/facundo/Escritorio/Obligatorio-SD&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Compound.start rabbit">
+    <configuration name="start rabbit" type="CompoundRunConfigurationType">
+      <toRun name="consumer" type="PythonConfigurationType" />
+      <toRun name="producer" type="PythonConfigurationType" />
+      <method v="2" />
+    </configuration>
+    <configuration name="app.js (1)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/estadistico/app.js" working-dir="$PROJECT_DIR$/estadistico">
+      <method v="2" />
+    </configuration>
+    <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/login/app.js" working-dir="$PROJECT_DIR$/login">
+      <method v="2" />
+    </configuration>
+    <configuration name="consumer" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="alerts_SD" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python3.8" />
+      <option name="SDK_NAME" value="Python 3.8" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/rabbit/venv/consumer" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rabbit/venv/consumer/consumer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="producer" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="alerts_SD" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/rabbit/venv/producer" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rabbit/venv/producer/producer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Compound.start rabbit" />
+      <item itemvalue="Node.js.app.js" />
+      <item itemvalue="Node.js.app.js (1)" />
+      <item itemvalue="Python.consumer" />
+      <item itemvalue="Python.producer" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.app.js (1)" />
+        <item itemvalue="Node.js.app.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="067f3488-d4da-44a4-b312-63f6d5247217" name="Changes" comment="" />
+      <created>1685560707471</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685560707471</updated>
+      <workItem from="1685560708516" duration="10587000" />
+      <workItem from="1685654824721" duration="772000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/alerts_SD$consumer.coverage" NAME="consumer Coverage Results" MODIFIED="1685654898984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rabbit/venv/consumer" />
+    <SUITE FILE_PATH="coverage/alerts_SD$producer.coverage" NAME="producer Coverage Results" MODIFIED="1685654899071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rabbit/venv/producer" />
   </component>
 </project>

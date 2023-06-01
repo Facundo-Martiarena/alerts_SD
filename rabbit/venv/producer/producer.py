@@ -9,12 +9,11 @@ app = Flask(__name__)
 @app.route('/datos', methods=['POST'])
 def procesar_datos():
     # Conectarse al servidor RabbitMQ
-    connection = pika.BlockingConnection(pika.ConnectionParameters('rabbitmq'))
+    connection = pika.BlockingConnection(pika.ConnectionParameters(host='localhost'))
     channel = connection.channel()
 
     # Publicar mensajes en el exchange
-    queue_name = 'queueName'
-    #channel.queue_declare(queue=queue_name)
+    queue_name = 'requests'
     data = request.json  # obtener los datos enviados en la solicitud
     # procesar los datos como sea necesario
 

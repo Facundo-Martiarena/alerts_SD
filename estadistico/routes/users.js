@@ -3,7 +3,7 @@ var router = express.Router();
 const { MongoClient } = require('mongodb');
 
 const app = express();
-const port = 4001;
+const port = 4000;
 const mongoUrl = 'mongodb://localhost:27018';
 const dbName = 'rabbitMQ';
 const collectionName = 'datos';
