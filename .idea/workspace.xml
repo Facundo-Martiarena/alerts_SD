@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="067f3488-d4da-44a4-b312-63f6d5247217" name="Changes" comment="" />
+    <list default="true" id="067f3488-d4da-44a4-b312-63f6d5247217" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estadistico/public/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/estadistico/public/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estadistico/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/estadistico/routes/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/login/node_modules/.cache/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/node_modules/.cache/default-development/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/login/node_modules/.cache/default-development/0.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbit/venv/consumer/consumer.py" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit/venv/consumer/consumer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbit/venv/producer/producer.py" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit/venv/producer/producer.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,8 +49,9 @@
     &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Merging main&quot;,
     &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/facundo/Escritorio/Obligatorio-SD&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/facundo/Escritorio/alerts_SD&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -134,7 +143,10 @@
       <option name="presentableId" value="Default" />
       <updated>1685560707471</updated>
       <workItem from="1685560708516" duration="10587000" />
-      <workItem from="1685654824721" duration="1103000" />
+      <workItem from="1685654824721" duration="7064000" />
+      <workItem from="1685707014314" duration="34000" />
+      <workItem from="1686090851071" duration="2385000" />
+      <workItem from="1686694530017" duration="624000" />
     </task>
     <servers />
   </component>
@@ -145,7 +157,7 @@
     <settings-migrated>true</settings-migrated>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/alerts_SD$consumer.coverage" NAME="consumer Coverage Results" MODIFIED="1685654898984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rabbit/venv/consumer" />
-    <SUITE FILE_PATH="coverage/alerts_SD$producer.coverage" NAME="producer Coverage Results" MODIFIED="1685654899071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rabbit/venv/producer" />
+    <SUITE FILE_PATH="coverage/alerts_SD$consumer.coverage" NAME="consumer Coverage Results" MODIFIED="1685658055175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rabbit/venv/consumer" />
+    <SUITE FILE_PATH="coverage/alerts_SD$producer.coverage" NAME="producer Coverage Results" MODIFIED="1685658055272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rabbit/venv/producer" />
   </component>
 </project>

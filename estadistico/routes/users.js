@@ -4,9 +4,9 @@ const { MongoClient } = require('mongodb');
 
 const app = express();
 const port = 4000;
-const mongoUrl = 'mongodb://localhost:27018';
+const mongoUrl = 'mongodb://localhost:27017';
 const dbName = 'rabbitMQ';
-const collectionName = 'datos';
+const collectionName = 'Montevideo_alerta_presion';
 const path = require('path');
 
 
@@ -21,12 +21,8 @@ router.get('/', function (req, res, next) {
   res.send('respond with a resource');
 });
 
-
-
-// Ruta para servir archivos estáticos
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Ruta para obtener los datos de MongoDB
 app.get('/data', async (req, res) => {
   try {
     const client = await MongoClient.connect(mongoUrl);
@@ -42,7 +38,6 @@ app.get('/data', async (req, res) => {
   }
 });
 
-//Ruta para actualizar el estado de un documento
 app.put('/data/:id', async (req, res) => {
   try {
     const { id } = req.params;
@@ -62,7 +57,6 @@ app.put('/data/:id', async (req, res) => {
 });
 
 
-/* GET users listing. */
 router.get('/', function (req, res, next) {
   res.send('respond with a resource');
 });

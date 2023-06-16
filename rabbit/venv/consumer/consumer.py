@@ -6,7 +6,6 @@ from email.mime.text import MIMEText
 import pika
 from pymongo import MongoClient
 
-# Establece la conexión con RabbitMQ
 connection = pika.BlockingConnection(pika.ConnectionParameters(host='localhost'))
 channel = connection.channel()
 
@@ -52,7 +51,6 @@ def send_mail(sender, receiver, subject, message):
 
     msg.attach(MIMEText(message, 'plain'))
 
-    # Envío del correo electrónico
     try:
         with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
             smtp.starttls()
@@ -63,11 +61,8 @@ def send_mail(sender, receiver, subject, message):
         print('Error al enviar el correo electrónico:', e)
 
 
-# Registra la función como consumidor de la cola temporal
 channel.basic_consume(queue=queue_name, on_message_callback=callback)
 
-# Comienza a consumir mensajes de la cola temporal
 channel.start_consuming()
 
-# Cierra la conexión con RabbitMQ
 connection.close()
