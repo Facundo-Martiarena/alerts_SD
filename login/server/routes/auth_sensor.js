@@ -8,11 +8,11 @@ const Joi = require("joi");
 
 // Ruta para autenticar a los sensores
 router.post("/", async (req, res) => {
-    const { sensorId, codigo } = req.body;
+    const { _id } = req.body;
 
     try {
         // Verifica si el sensor existe en la base de datos
-        const sensor = await Sensor.findOne({ sensorId, codigo });
+        const sensor = await Sensor.findOne({ _id });
 
         if (!sensor) {
             return res.status(401).json({ message: "Sensor no autorizado" });

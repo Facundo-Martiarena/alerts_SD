@@ -6,12 +6,131 @@
   <component name="ChangeListManager">
     <list default="true" id="067f3488-d4da-44a4-b312-63f6d5247217" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/estadistico/public/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/estadistico/public/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/estadistico/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/estadistico/routes/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/login/node_modules/.cache/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/node_modules/.cache/default-development/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/login/node_modules/.cache/default-development/0.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit/venv/consumer/consumer.py" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit/venv/consumer/consumer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit/venv/producer/producer.py" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit/venv/producer/producer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/client/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/login/client/node_modules/.cache/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/client/node_modules/.cache/default-development/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/login/client/node_modules/.cache/default-development/0.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/client/node_modules/.cache/default-development/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/login/client/node_modules/.cache/default-development/index.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/client/node_modules/.cache/default-development/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/login/client/node_modules/.cache/default-development/index.pack.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/.bin/detect-libc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/lib/util/versioning.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/lib/util/versioning.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/bin/semver.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/bin/semver.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/classes/comparator.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/classes/comparator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/classes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/classes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/classes/range.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/classes/range.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/classes/semver.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/classes/semver.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/functions/cmp.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/functions/cmp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/functions/coerce.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/functions/coerce.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/functions/diff.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/functions/diff.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/functions/inc.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/functions/inc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/functions/parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/functions/parse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/internal/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/internal/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/internal/identifiers.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/internal/identifiers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/internal/parse-options.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/internal/parse-options.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/internal/re.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/internal/re.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/ranges/intersects.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/ranges/intersects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/ranges/min-version.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/ranges/min-version.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/ranges/outside.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/ranges/outside.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/ranges/simplify.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/ranges/simplify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/ranges/subset.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/node_modules/semver/ranges/subset.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/@mapbox/node-pre-gyp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/agent-base/node_modules/debug/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/agent-base/node_modules/debug/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/agent-base/node_modules/debug/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/agent-base/node_modules/debug/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/agent-base/node_modules/debug/src/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/agent-base/node_modules/debug/src/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/bcrypt/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/bcrypt/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/bcrypt/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/bcrypt/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/bcrypt/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/bcrypt/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/bcrypt/appveyor.yml" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/bcrypt/appveyor.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/bcrypt/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/bcrypt/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/bcrypt/src/bcrypt_node.cc" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/bcrypt/src/bcrypt_node.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/bcrypt/test/async.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/bcrypt/test/implementation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/bcrypt/test/promise.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/bcrypt/test/repetitions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/bcrypt/test/sync.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/detect-libc/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/detect-libc/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/detect-libc/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/detect-libc/bin/detect-libc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/detect-libc/lib/detect-libc.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/detect-libc/lib/detect-libc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/detect-libc/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/detect-libc/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/glob/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/glob/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/glob/glob.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/glob/glob.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/glob/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/glob/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/glob/sync.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/glob/sync.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/https-proxy-agent/dist/agent.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/https-proxy-agent/dist/agent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/https-proxy-agent/dist/agent.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/https-proxy-agent/dist/agent.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/https-proxy-agent/node_modules/debug/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/https-proxy-agent/node_modules/debug/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/https-proxy-agent/node_modules/debug/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/https-proxy-agent/node_modules/debug/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/https-proxy-agent/node_modules/debug/src/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/https-proxy-agent/node_modules/debug/src/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/https-proxy-agent/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/https-proxy-agent/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/minipass/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/minipass/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/minipass/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/minipass/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/minipass/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/minipass/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/minipass/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/minipass/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/node-addon-api/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/node-addon-api/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/node-addon-api/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/node-addon-api/except.gypi" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/node-addon-api/except.gypi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/node-addon-api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/node-addon-api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/node-addon-api/napi-inl.deprecated.h" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/node-addon-api/napi-inl.deprecated.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/node-addon-api/napi-inl.h" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/node-addon-api/napi-inl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/node-addon-api/napi.h" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/node-addon-api/napi.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/node-addon-api/noexcept.gypi" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/node-addon-api/noexcept.gypi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/node-addon-api/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/node-addon-api/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/node-addon-api/tools/check-napi.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/node-addon-api/tools/check-napi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/node-addon-api/tools/clang-format.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/node-addon-api/tools/clang-format.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/node-addon-api/tools/conversion.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/node-addon-api/tools/conversion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/node-fetch/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/node-fetch/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/node-fetch/browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/node-fetch/browser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/node-fetch/lib/index.es.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/node-fetch/lib/index.es.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/node-fetch/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/node-fetch/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/node-fetch/lib/index.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/node-fetch/lib/index.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/node-fetch/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/node-fetch/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/readable-stream/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/readable-stream/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/readable-stream/lib/_stream_duplex.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/readable-stream/lib/_stream_duplex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/readable-stream/lib/_stream_passthrough.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/readable-stream/lib/_stream_passthrough.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/readable-stream/lib/_stream_readable.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/readable-stream/lib/_stream_readable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/readable-stream/lib/_stream_transform.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/readable-stream/lib/_stream_transform.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/readable-stream/lib/_stream_writable.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/readable-stream/lib/_stream_writable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/readable-stream/lib/internal/streams/async_iterator.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/readable-stream/lib/internal/streams/async_iterator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/readable-stream/lib/internal/streams/buffer_list.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/readable-stream/lib/internal/streams/buffer_list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/readable-stream/lib/internal/streams/destroy.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/readable-stream/lib/internal/streams/destroy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/readable-stream/lib/internal/streams/end-of-stream.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/readable-stream/lib/internal/streams/end-of-stream.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/readable-stream/lib/internal/streams/from.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/readable-stream/lib/internal/streams/from.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/readable-stream/lib/internal/streams/pipeline.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/readable-stream/lib/internal/streams/pipeline.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/readable-stream/lib/internal/streams/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/readable-stream/lib/internal/streams/state.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/readable-stream/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/readable-stream/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/signal-exit/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/signal-exit/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/signal-exit/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/signal-exit/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/tar/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/tar/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/tar/lib/create.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/tar/lib/create.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/tar/lib/extract.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/tar/lib/extract.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/tar/lib/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/tar/lib/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/tar/lib/large-numbers.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/tar/lib/large-numbers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/tar/lib/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/tar/lib/list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/tar/lib/mkdir.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/tar/lib/mkdir.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/tar/lib/mode-fix.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/tar/lib/mode-fix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/tar/lib/normalize-unicode.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/tar/lib/normalize-unicode.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/tar/lib/pack.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/tar/lib/pack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/tar/lib/parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/tar/lib/parse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/tar/lib/path-reservations.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/tar/lib/path-reservations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/tar/lib/pax.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/tar/lib/pax.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/tar/lib/read-entry.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/tar/lib/read-entry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/tar/lib/replace.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/tar/lib/replace.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/tar/lib/strip-absolute-path.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/tar/lib/strip-absolute-path.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/tar/lib/unpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/tar/lib/unpack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/tar/lib/update.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/tar/lib/update.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/tar/lib/warn-mixin.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/tar/lib/warn-mixin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/tar/lib/write-entry.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/tar/lib/write-entry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/node_modules/tar/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/node_modules/tar/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/routes/auth_sensor.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/routes/auth_sensor.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,26 +162,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Merging main&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/facundo/Escritorio/alerts_SD&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Merging main",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "/home/facundo/Escritorio/alertas_uy",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Compound.start rabbit">
     <configuration name="start rabbit" type="CompoundRunConfigurationType">
       <toRun name="consumer" type="PythonConfigurationType" />
@@ -147,6 +266,7 @@
       <workItem from="1685707014314" duration="34000" />
       <workItem from="1686090851071" duration="2385000" />
       <workItem from="1686694530017" duration="624000" />
+      <workItem from="1686942898119" duration="4264000" />
     </task>
     <servers />
   </component>
@@ -157,7 +277,7 @@
     <settings-migrated>true</settings-migrated>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/alerts_SD$consumer.coverage" NAME="consumer Coverage Results" MODIFIED="1685658055175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rabbit/venv/consumer" />
-    <SUITE FILE_PATH="coverage/alerts_SD$producer.coverage" NAME="producer Coverage Results" MODIFIED="1685658055272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rabbit/venv/producer" />
+    <SUITE FILE_PATH="coverage/alerts_SD$consumer.coverage" NAME="consumer Coverage Results" MODIFIED="1686947295567" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rabbit/venv/consumer" />
+    <SUITE FILE_PATH="coverage/alerts_SD$producer.coverage" NAME="producer Coverage Results" MODIFIED="1686947295652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rabbit/venv/producer" />
   </component>
 </project>
