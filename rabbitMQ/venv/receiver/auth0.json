@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "sistemas-distribuidos-388201",
+  "private_key_id": "9c4792dc3ce79b212870e7e391d476db4309f38a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDa9w9rZJHnjisq\nHfz7Enl/jO5Wmq4D/gaqVCeuLoSDhRwrTKCirm85O59L6NUfUqjO+3WvFy13jT/h\nbd1TSvgOztTOZfZpIAKZZmCWSPbYHcU33rTBhKyb0x0RY3xPAWXOozWueBZZnLf5\n/UhDymV8EZPViWzlgQw+Rbp30ftcHgZK4k0xihWgDmIp7tj5878E4FWGASWXjlce\n1gFJVD8VgNLbyI0a7wW0MdoEoIGYX7dPNFhyzs5knav/W2ppP+lae4iUD6x9uhnK\nw97AjhbKh90kLw6US76yAK4S3bLhaLSbSidU6NJzPLF6fHgLmJAAu9H48N+lYn4J\noaBSYkhxAgMBAAECggEAASRga7Z6vlhIUwVqBY3l8quJA2Gg07uA9xAjpC3GRNYD\nvMQUYxTW1q0Vb8oXRn0MuAZUFFA3d/6qx8xmEaJRTekimgWqddzpYTnJT4SyPj6q\n1yzts26zjx0tnc1vig1J+ycbHL2v8X1hm50IbKDDIRUJuNzpI6n7Jt3/6CfBEGIY\nkR+4K7rzXPMFbIFai0sQq16vSOR0IDAds7CznA3hLEGX5Tsbrjpz6yVv9syq4StX\nQAsp2LK2wKp0zaPu+E2RxuVjZAdxdherx7JRiC2rC5cdVkRzDQLCEE4OUso4VNpq\nhz7G4LU22WzZfQiyMmrDREwIL8iiUkP56jkoc9LjewKBgQD8AnkYP7LgMnqXH5Xq\nJOG9akNePtTlTqPgAWwIJlCMiZuJUn0M5CsVbh4f4j3+DeFFJC85enkmaPivARe+\nB7KkozacNAkx4deKXco8RWBy07C39cIYOj1FDusHbnAbCrnRX6ewdQpdwrz4KI+i\ne496woFMhu2VH1urvTlqRxe7gwKBgQDebqPmWPk2wEr+seTQ5BdmwSqEg2fmb22b\nFR+bdQcFsqOlCLsHY3mP9yz7fGd/S2vIoMmKap813YgtuXAGklNrD4QdnW9VIxZ0\ncIViM+H1Zq6CYiKVJiaiR8Dtx1goklj6NAq4KlDeze6AXaUEKNeEiQUcnLWzcfU2\nQJ6f5xal+wKBgQCJRAuTkraq+bPedvzgUYCH/MZ/IjgyQrhuPjgK5FvBgP6wOLcW\ne32gKZ/M/B2KMSM/1urGIxi0PD8gi7bT8jtzA9euE4XinsIZguayF5PmV7oNKZa0\nPZy77dlE7fmwMRJvoeuj6Mxhr73gaa968FSBqEpnVaM5M6BqFiKc6eZaYwKBgQDS\n5j7bOoNZSWwSICQfeBVEJWUl7d5G3GIlSBsG8CgvW9jTsvp6n/Pz794juSn8xUs2\nGFXfuwaoMRtcl1XDtVwIx9ZxqgOUyscQsluV6DGX17sg/uFhX6ID/lrMWVWaamCZ\nI10Cj4TMLJ+18JR05DCshqplHaUetq9UuGJupNKRnwKBgQClFe44IPzPGJqvNAQD\n4Y8AHPiJxP9fkIJe5WYrIJKSp/53fTLj7PgLG2TEIcyQuy2pGpLDTwijRp0dEVxz\nSObP6iUJdB05F1UaMEV4FI6JnhpjPoNSY+6uCI45U4G1BTA2LSY5221kI1b+yFSc\nUiXPQSkYB0kCJSga90/lTlB2MA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "sistemadistribuidos@sistemas-distribuidos-388201.iam.gserviceaccount.com",
+  "client_id": "107780632221829745122",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sistemadistribuidos%40sistemas-distribuidos-388201.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

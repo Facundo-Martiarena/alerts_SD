@@ -1,0 +1,43 @@
+version: '3.9'
+services:
+  receiver:
+    build:
+      context: ./receiver
+      dockerfile: Dockerfile
+    volumes:
+      - ./receiver:/app
+    environment:
+      - RABBITMQ_HOST=rabbitmq
+      - RABBITMQ_PORT=5672
+      - RABBITMQ_QUEUE=queueName
+      - MONGO_HOST=mongodb
+      - MONGO_PORT=27017
+    depends_on:
+      - rabbitmq
+      - mongodb
+
+  sender:
+    build:
+      context: ./sender
+      dockerfile: Dockerfile
+    volumes:
+      - ./sender:/app
+    environment:
+      - RABBITMQ_HOST=rabbitmq
+      - RABBITMQ_PORT=5672
+      - RABBITMQ_QUEUE=queueName
+    depends_on:
+      - rabbitmq
+
+  rabbitmq:
+    image: rabbitmq:3.8-management
+    ports:
+      - 5672:5672
+      - 15672:15672
+
+  mongodb:
+    image: mongo:latest
+    ports:
+      - 27017:27017
+    volumes:
+      - ./data:/data/db
