@@ -52,13 +52,14 @@ def process_message(ch, method, properties, body):
     mongo_users = mongo_client['alertas']
     collection_users = mongo_users['users']
 
+    collection_all = mongo_db['all']
     users = collection_users.find()
     for user in users:
         user_email = user.get('email')
         users_list.append(user_email)
 
     if pressure < 50:
-        collection = mongo_db['alerts_pressure']
+        collection = mongo_db[department + '_alert_pressure']
         receiver = users_list
         receiver_str = ', '.join(receiver)
         subject = 'Alerta importante'
@@ -69,6 +70,7 @@ def process_message(ch, method, properties, body):
 
     logging.info('Message saved in MongoDB')
     collection.insert_one(data)
+    collection_all.insert_one(data)
 
     ch.basic_ack(delivery_tag=method.delivery_tag)
     logging.info('Message received and processed successfully')
