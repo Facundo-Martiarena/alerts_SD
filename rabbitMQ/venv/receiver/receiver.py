@@ -58,7 +58,7 @@ def process_message(ch, method, properties, body):
         users_list.append(user_email)
 
     if pressure < 50:
-        collection = mongo_db[department + '_alert_pressure']
+        collection = mongo_db['alerts_pressure']
         receiver = users_list
         receiver_str = ', '.join(receiver)
         subject = 'Alerta importante'
