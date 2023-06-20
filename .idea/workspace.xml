@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="067f3488-d4da-44a4-b312-63f6d5247217" name="Changes" comment="" />
+    <list default="true" id="067f3488-d4da-44a4-b312-63f6d5247217" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +45,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "Merging main",
     "go.import.settings.migrated": "true",
-    "last_opened_file_path": "/home/facundo/Escritorio/alerts_SD/rabbitMQ/venv/no_response_sensor/no_response_sensor.py",
+    "last_opened_file_path": "/home/facundo/Escritorio/alerts_SD",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -55,6 +57,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/rabbitMQ/venv" />
+    </key>
+  </component>
   <component name="RunManager" selected="Compound.start rabbit">
     <configuration name="start rabbit" type="CompoundRunConfigurationType">
       <toRun name="alerts" type="PythonConfigurationType" />
@@ -166,7 +173,8 @@
       <workItem from="1686090851071" duration="2385000" />
       <workItem from="1686694530017" duration="624000" />
       <workItem from="1686942898119" duration="7402000" />
-      <workItem from="1687034752358" duration="7582000" />
+      <workItem from="1687034752358" duration="8225000" />
+      <workItem from="1687298958203" duration="1378000" />
     </task>
     <servers />
   </component>

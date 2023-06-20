@@ -1,70 +1,34 @@
 import json
 import os
-import smtplib
 import pika
 import logging
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
 from dotenv import load_dotenv
 from flask import Flask
 from pymongo import MongoClient
+from rabbit.venv.utils.rabbit_utils import get_users, send_mail
 
 app = Flask(__name__)
 
 logging.basicConfig(level=logging.DEBUG)
 
-
-def send_mail(sender, receiver, subject, message):
-    load_dotenv('.env')
-    smtp_server = os.getenv('SMTP_SERVER')
-    smtp_port = int(os.getenv('SMTP_PORT'))
-    smtp_username = os.getenv('SMTP_USERNAME')
-    smtp_password = os.getenv('SMTP_PASSWORD')
-
-    msg = MIMEMultipart()
-    msg['From'] = sender
-    msg['To'] = receiver
-    msg['Subject'] = subject
-
-    msg.attach(MIMEText(message, 'plain'))
-
-    try:
-        with smtplib.SMTP(smtp_server, smtp_port) as smtp:
-            smtp.starttls()
-            smtp.login(smtp_username, smtp_password)
-            smtp.send_message(msg)
-        logging.info('Email sent successfully.')
-    except smtplib.SMTPException as e:
-        logging.error('Failed to send email: %s', e)
+mongo_client = MongoClient('localhost', 27017)
+mongo_db = mongo_client['rabbitMQ']
 
 
-def process_message(ch, method, properties, body):
+def process_message_pressure(ch, method, properties, body):
     data = json.loads(body)
     pressure = data.get('pressure')
     location = data.get('location')
     department = data.get('department')
     logging.info(f'pressure: %s in the location: %s', pressure, location)
-
-    users_list = []
-
-    mongo_client = MongoClient('localhost', 27017)
-    mongo_db = mongo_client['rabbitMQ']
-    mongo_users = mongo_client['alertas']
-    collection_users = mongo_users['users']
-
     collection_all = mongo_db['all']
-    users = collection_users.find()
-    for user in users:
-        user_email = user.get('email')
-        users_list.append(user_email)
 
     if pressure < 50:
         collection = mongo_db[department + '_alert_pressure']
-        receiver = users_list
-        receiver_str = ', '.join(receiver)
-        subject = 'Alerta importante'
+        receiver_str = ', '.join(get_users())
+        subject = 'Alert!!!'
         message = f'An alert condition has been detected in the system, in department: {department}, with a pressure of {pressure} psi.'
-        send_mail('sistemas.distribuidos2023@gmail.com', receiver_str, subject, message)
+        send_mail(receiver_str, subject, message)
     else:
         collection = mongo_db['not_alerted']
 
@@ -77,7 +41,7 @@ def process_message(ch, method, properties, body):
 
 
 def main():
-    load_dotenv('.env')
+    load_dotenv('../.env')
     rabbitmq_host = os.getenv('RABBITMQ_HOST')
     rabbitmq_port = int(os.getenv('RABBITMQ_PORT'))
     rabbitmq_queue = os.getenv('RABBITMQ_QUEUE')
@@ -86,7 +50,7 @@ def main():
     channel = connection.channel()
     channel.queue_declare(queue=rabbitmq_queue)
 
-    channel.basic_consume(queue=rabbitmq_queue, on_message_callback=process_message)
+    channel.basic_consume(queue=rabbitmq_queue, on_message_callback=process_message_pressure)
 
     try:
         channel.start_consuming()
