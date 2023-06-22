@@ -28,7 +28,7 @@ def get_all_ids():
 def check_sensor_data(sensor_ids):
     list_sensors_no_response = []
     while True:
-        ten_seconds_ago = datetime.utcnow() - timedelta(minutes=10)
+        ten_seconds_ago = datetime.utcnow() - timedelta(minutes=30)
         ten_minutes_ago_str = ten_seconds_ago.strftime("%Y-%m-%dT%H:%M:%S.%fZ")
 
         for sensor_id in sensor_ids:
@@ -48,7 +48,7 @@ def check_sensor_data(sensor_ids):
             users_join = ', '.join(users)
             send_mail(users_join, subject, message)
 
-        time.sleep(10)
+        time.sleep(1800)
 
 
 ids = get_all_ids()
