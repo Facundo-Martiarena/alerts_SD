@@ -5,7 +5,8 @@ import logging
 from dotenv import load_dotenv
 from flask import Flask
 from pymongo import MongoClient
-from rabbit.venv.utils.rabbit_utils import get_users, send_mail
+
+from rabbitMQ.venv.utils.rabbit_utils import get_users, send_mail
 
 app = Flask(__name__)
 
@@ -24,17 +25,19 @@ def process_message_pressure(ch, method, properties, body):
     collection_all = mongo_db['all']
 
     if pressure < 50:
-        collection = mongo_db[department + '_alert_pressure']
+        collection = mongo_db['alerted']
+        collection_all.insert_one(data)
         receiver_str = ', '.join(get_users())
         subject = 'Alert!!!'
         message = f'An alert condition has been detected in the system, in department: {department}, with a pressure of {pressure} psi.'
         send_mail(receiver_str, subject, message)
     else:
+        data['status'] = 'not alerted'
+        collection_all.insert_one(data)
         collection = mongo_db['not_alerted']
 
     logging.info('Message saved in MongoDB')
     collection.insert_one(data)
-    collection_all.insert_one(data)
 
     ch.basic_ack(delivery_tag=method.delivery_tag)
     logging.info('Message received and processed successfully')

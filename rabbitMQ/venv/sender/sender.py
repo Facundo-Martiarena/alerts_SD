@@ -16,7 +16,7 @@ def process_data():
     queue_name = 'queueName'
     data = request.json
 
-    data['state'] = "alerted"
+    data['status'] = "alerted"
 
     message = json.dumps(data)
 

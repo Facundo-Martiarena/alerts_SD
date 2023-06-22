@@ -1,9 +1,13 @@
 import pymongo
 import time
+import logging
 from datetime import datetime, timedelta
 from functools import lru_cache
 
-from rabbit.venv.utils.rabbit_utils import send_mail, get_users
+from rabbitMQ.venv.utils.rabbit_utils import get_users, send_mail
+
+
+logging.basicConfig(level=logging.DEBUG)
 
 client = pymongo.MongoClient("mongodb://localhost:27017")
 db_sensor = client['alertas']
@@ -31,10 +35,10 @@ def check_sensor_data(sensor_ids):
             result = collection_all.find_one({"sensor_id": sensor_id, "date": {"$gte": ten_minutes_ago_str}})
 
             if result is not None:
-                print("Data found for the following sensor:", result)
+                logging.info("Data found for the following sensor: %s", result)
             else:
                 list_sensors_no_response.append(sensor_id)
-                print("No data found for the following sensor:", sensor_id)
+                logging.info("No data found for the following sensor: %s", sensor_id)
 
         if list_sensors_no_response:
             sensor_list = ', '.join(list_sensors_no_response)
@@ -44,10 +48,8 @@ def check_sensor_data(sensor_ids):
             users_join = ', '.join(users)
             send_mail(users_join, subject, message)
 
-        time.sleep(600)
+        time.sleep(10)
 
 
 ids = get_all_ids()
-print(ids)
-
 check_sensor_data(ids)
