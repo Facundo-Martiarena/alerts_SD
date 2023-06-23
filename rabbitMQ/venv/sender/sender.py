@@ -8,7 +8,7 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-logging.basicConfig(level=logging.DEBUG)
+#logging.basicConfig(level=logging.DEBUG)
 
 
 @app.route('/data', methods=['POST'])
@@ -27,7 +27,7 @@ def process_data():
         logging.error('ERROR 401: Unauthorized access')
         return jsonify({"message": "Unauthorized access"}), 401
 
-    connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
+    connection = pika.BlockingConnection(pika.ConnectionParameters('queue'))
     channel = connection.channel()
 
     channel.basic_publish(exchange='', routing_key=queue_name, body=message)
@@ -45,7 +45,7 @@ def verify_token(sensor_id):
         "_id": sensor_id
     }
 
-    response = requests.post("http://localhost:8080/api/authenticate/sensor", json=data)
+    response = requests.post("http://login_server:8080/api/authenticate/sensor", json=data)
 
     if not response:
         return False
@@ -65,4 +65,4 @@ def verify_token(sensor_id):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)

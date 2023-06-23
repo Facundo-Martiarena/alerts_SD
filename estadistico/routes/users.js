@@ -4,7 +4,7 @@ const { MongoClient } = require('mongodb');
 
 const app = express();
 const port = 4000;
-const mongoUrl = 'mongodb://localhost:27017';
+const mongoUrl = 'mongodb://mongodb:27017';
 const dbName = 'rabbitMQ';
 const collectionName = 'Montevideo_alerta_presion';
 const path = require('path');

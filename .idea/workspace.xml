@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="067f3488-d4da-44a4-b312-63f6d5247217" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login/client/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login/server/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estadistico/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/estadistico/routes/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/client/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/login/client/node_modules/.cache/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/client/node_modules/.cache/default-development/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/login/client/node_modules/.cache/default-development/0.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/client/node_modules/.cache/default-development/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/login/client/node_modules/.cache/default-development/index.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/client/node_modules/.cache/default-development/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/login/client/node_modules/.cache/default-development/index.pack.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/client/src/components/Login/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/login/client/src/components/Login/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/client/src/components/Singup/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/login/client/src/components/Singup/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +56,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "Merging main",
     "go.import.settings.migrated": "true",
-    "last_opened_file_path": "/home/facundo/Escritorio/alerts_SD",
+    "last_opened_file_path": "/home/facundo/Escritorio/alerts_SD/rabbitMQ/venv/no_response_sensor",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -54,14 +65,22 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
+    "ts.external.directory.path": "/snap/intellij-idea-ultimate/430/plugins/javascript-impl/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/rabbitMQ/venv/no_response_sensor" />
+      <recent name="$PROJECT_DIR$/login/client/src" />
+      <recent name="$PROJECT_DIR$/login/server" />
+      <recent name="$PROJECT_DIR$/rabbitMQ/venv/receiver" />
       <recent name="$PROJECT_DIR$/rabbitMQ/venv" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/login/client" />
+      <recent name="$PROJECT_DIR$/login/client/src" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/rabbitMQ/venv" />
     </key>
   </component>
@@ -179,7 +198,9 @@
       <workItem from="1687034752358" duration="8225000" />
       <workItem from="1687298958203" duration="2748000" />
       <workItem from="1687368786531" duration="1976000" />
-      <workItem from="1687471796142" duration="1551000" />
+      <workItem from="1687471796142" duration="3117000" />
+      <workItem from="1687476089030" duration="1871000" />
+      <workItem from="1687478142889" duration="9891000" />
     </task>
     <servers />
   </component>
@@ -193,13 +214,13 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/rabbitMQ/venv/no_response_sensor/no_response_sensor.py</url>
-          <line>30</line>
+          <url>file://$PROJECT_DIR$/rabbitMQ/venv/sensor/no_response_sensor.py</url>
+          <line>29</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/rabbitMQ/venv/no_response_sensor/no_response_sensor.py</url>
-          <line>42</line>
+          <url>file://$PROJECT_DIR$/rabbitMQ/venv/sensor/no_response_sensor.py</url>
+          <line>41</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

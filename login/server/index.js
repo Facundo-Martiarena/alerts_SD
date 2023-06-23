@@ -12,7 +12,7 @@ const authenticate = require("./routes/auth_sensor");
 const mongoose = require("mongoose")
 
 mongoose.set("strictQuery", false);
-mongoose.connect("mongodb://localhost:27017/alertas")
+mongoose.connect("mongodb://mongodb:27017/alertas")
 
     .then(async () => {
         console.log("mongodb connected");

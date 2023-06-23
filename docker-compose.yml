@@ -1,0 +1,70 @@
+version: '3.9'
+services:
+  receiver:
+    build:
+      context: rabbitMQ/venv/receiver
+    depends_on:
+      queue:
+        condition: service_healthy
+    environment:
+      - SMTP_PASSWORD=huoxjemlwiopgwnr
+      - SMTP_SERVER=smtp.gmail.com
+      - SMTP_PORT=587
+      - SMTP_USERNAME=sistemas.distribuidos2023@gmail.com
+      - RABBITMQ_HOST=queue
+      - RABBITMQ_PORT=5672
+      - RABBITMQ_QUEUE=queueName
+
+  sender:
+    build:
+      context: rabbitMQ/venv/sender
+    depends_on:
+      queue:
+        condition: service_healthy
+    ports:
+      - "5000:5000"
+
+  sensor_response:
+    build:
+      context: rabbitMQ/venv/sensor
+    depends_on:
+      - mongodb
+    environment:
+      - SMTP_PASSWORD=huoxjemlwiopgwnr
+      - SMTP_SERVER=smtp.gmail.com
+      - SMTP_PORT=587
+      - SMTP_USERNAME=sistemas.distribuidos2023@gmail.com
+      - RABBITMQ_HOST=queue
+      - RABBITMQ_PORT=5672
+      - RABBITMQ_QUEUE=queueName
+
+  login_server:
+    build:
+      context: login/server
+    ports:
+      - "8080:80"
+
+  login_client:
+    build:
+      context: login/client
+    ports:
+      - "8081:80"
+
+  queue:
+    image: rabbitmq:3-alpine
+    healthcheck:
+      test: rabbitmq-diagnostics -q ping
+      interval: 10s
+      timeout: 10s
+      retries: 3
+    ports:
+      - "5673:5672"
+    expose:
+      - "5672"
+
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./data:/data/db

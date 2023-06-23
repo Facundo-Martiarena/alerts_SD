@@ -6,13 +6,14 @@ from dotenv import load_dotenv
 from flask import Flask
 from pymongo import MongoClient
 
-from rabbitMQ.venv.utils.rabbit_utils import get_users, send_mail
+from rabbit_utils import get_users, send_mail
 
 app = Flask(__name__)
 
-logging.basicConfig(level=logging.DEBUG)
+#logging.basicConfig(level=logging.DEBUG)
 
-mongo_client = MongoClient('localhost', 27017)
+mongohost = os.getenv("MONGO_HOST", "localhost")
+mongo_client = MongoClient('mongodb', 27017)
 mongo_db = mongo_client['rabbitMQ']
 
 
@@ -45,17 +46,28 @@ def process_message_pressure(ch, method, properties, body):
 
 def main():
     load_dotenv('../.env')
-    rabbitmq_host = os.getenv('RABBITMQ_HOST')
-    rabbitmq_port = int(os.getenv('RABBITMQ_PORT'))
-    rabbitmq_queue = os.getenv('RABBITMQ_QUEUE')
+    rabbitmq_host = 'queue'
+    rabbitmq_port = 5672
+    rabbitmq_queue = 'queueName'
 
-    connection = pika.BlockingConnection(pika.ConnectionParameters(rabbitmq_host, rabbitmq_port))
-    channel = connection.channel()
-    channel.queue_declare(queue=rabbitmq_queue)
+    if rabbitmq_host is None:
+        # Handle the case when the environment variable is not set
+        print("RABBITMQ_HOST environment variable is not set.")
+        return
 
-    channel.basic_consume(queue=rabbitmq_queue, on_message_callback=process_message_pressure)
+    if rabbitmq_port is None:
+        # Handle the case when the environment variable is not set
+        print("RABBITMQ_PORT environment variable is not set.")
+        return
 
     try:
+        rabbitmq_port = rabbitmq_port
+
+        connection = pika.BlockingConnection(pika.ConnectionParameters(rabbitmq_host, rabbitmq_port))
+        channel = connection.channel()
+        channel.queue_declare(queue=rabbitmq_queue)
+
+        channel.basic_consume(queue=rabbitmq_queue, on_message_callback=process_message_pressure)
         channel.start_consuming()
     except KeyboardInterrupt:
         channel.stop_consuming()
