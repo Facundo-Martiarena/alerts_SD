@@ -16,17 +16,23 @@ Sigue los pasos a continuación para ejecutar la aplicación y realizar pruebas.
 
 ### Pasos a Seguir
 
-1. Clona el repositorio a tu máquina local.
+1. Clonar el repositorio a tu máquina local.
 
-2. Navega hasta el directorio del proyecto.
+2. Navegar hasta el directorio del proyecto.
 
-3. Ejecuta el siguiente comando para iniciar la aplicación, la base de datos MongoDB y los servicios Python con RabbitMQ utilizando Docker Compose:
+3. Ejecutar el siguiente comando para iniciar la aplicación, la base de datos MongoDB y los servicios Python con RabbitMQ utilizando Docker Compose:
 
    ```bash
    docker-compose build
    docker-compose up
 
-4. Puedes utilizar el siguiente curl para tener referencia y realizar pruebas por cada sensor en particular
+4. Acceso por navegador web `localhost:3000`
+
+   Nota: Es necesario tener activado el plugin de CORS
+
+### Pruebas
+
+Curl para tener referencia y realizar pruebas por cada sensor en particular
 
    ```bash
    curl --location --request POST 'http://localhost:5000/data' \
@@ -38,6 +44,8 @@ Sigue los pasos a continuación para ejecutar la aplicación y realizar pruebas.
    "pressure": 12,
    "date": "{{currentDate}}"
    }'
+   ```
 
-5. Para poder realizar las pruebas de carga, debe abrir el archivo `sistemasDistribuidos.jmx`, y ejecutar.
-   (tener en cuenta que la verisón usada para jmeter, es la 5.5)
+Para poder realizar las pruebas de carga, abrir el archivo `sistemasDistribuidos.jmx`, y ejecutar.
+(tener en cuenta que la verisón usada para jmeter, es la 5.5)
+
