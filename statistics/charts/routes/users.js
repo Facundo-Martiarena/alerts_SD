@@ -4,7 +4,8 @@ const { MongoClient } = require('mongodb');
 
 const app = express();
 const port = 4000;
-const mongoUrl = 'mongodb://localhost:27017';
+const host = '0.0.0.0';
+const mongoUrl = 'mongodb://mongodb:27017';
 const dbName = 'rabbitMQ';
 const collectionName = 'all';
 const path = require('path');
@@ -12,7 +13,7 @@ const path = require('path');
 
 app.use(express.json());
 
-app.listen(port, () => {
+app.listen(port, host, () => {
   console.log(`Server listening on port ${port}`);
 });
 
@@ -37,7 +38,7 @@ app.get('/data', async (req, res) => {
         }
       },
       { $replaceRoot: { newRoot: '$lastElement' } },
-      { $match: { state: 'alerted' } }
+      { $match: { status: 'alerted' } }
     ]).toArray();
 
     client.close();
@@ -55,8 +56,8 @@ app.put('/data/:id', async (req, res) => {
     const db = client.db(dbName);
     const collection = db.collection(collectionName);
     const result = await collection.updateOne(
-        { _id: String(id) },
-        { $set: { state: 'fixed' } }
+        { sensor_id: String(id) },
+        { $set: { status: 'fixed' } }
     );
     client.close();
     res.json(result);
@@ -66,8 +67,5 @@ app.put('/data/:id', async (req, res) => {
   }
 });
 
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
 
 module.exports = router;

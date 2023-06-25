@@ -12,7 +12,6 @@ app = Flask(__name__)
 
 #logging.basicConfig(level=logging.DEBUG)
 
-mongohost = os.getenv("MONGO_HOST", "localhost")
 mongo_client = MongoClient('mongodb', 27017)
 mongo_db = mongo_client['rabbitMQ']
 

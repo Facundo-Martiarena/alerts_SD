@@ -10,7 +10,7 @@ RUN npm install -g npm
 RUN npm install
 
 # Expone el puerto en el que se ejecutará la aplicación
-EXPOSE 3000
+EXPOSE 3002
 
 #Ejecutamos nuestra app en docker
 ENTRYPOINT [ "npm", "start" ]

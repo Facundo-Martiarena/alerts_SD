@@ -11,7 +11,7 @@ const Main = () => {
 	};
 
 	const handleReparaciones = () => {
-		window.location.href = 'http://localhost:3001/'
+		window.location.href = 'http://localhost:3002/'
 	};
 
 	return (
