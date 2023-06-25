@@ -1,0 +1,5 @@
+pymongo==4.4.0
+datetime
+python-dotenv
+flask
+requests
