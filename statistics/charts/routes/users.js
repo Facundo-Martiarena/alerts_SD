@@ -55,7 +55,7 @@ app.put('/data/:id', async (req, res) => {
     const client = await MongoClient.connect(mongoUrl);
     const db = client.db(dbName);
     const collection = db.collection(collectionName);
-    const result = await collection.updateOne(
+    const result = await collection.updateMany(
         { sensor_id: String(id) },
         { $set: { status: 'fixed' } }
     );
@@ -66,6 +66,7 @@ app.put('/data/:id', async (req, res) => {
     res.status(500).json({ error: 'Internal Server Error' });
   }
 });
+
 
 
 module.exports = router;

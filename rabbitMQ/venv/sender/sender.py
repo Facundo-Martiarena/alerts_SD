@@ -8,9 +8,6 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-#logging.basicConfig(level=logging.DEBUG)
-
-
 @app.route('/data', methods=['POST'])
 def process_data():
     queue_name = 'queueName'

@@ -10,8 +10,6 @@ from rabbit_utils import get_users, send_mail
 
 app = Flask(__name__)
 
-#logging.basicConfig(level=logging.DEBUG)
-
 mongo_client = MongoClient('mongodb', 27017)
 mongo_db = mongo_client['rabbitMQ']
 

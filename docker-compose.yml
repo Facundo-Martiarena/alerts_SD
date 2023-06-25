@@ -43,6 +43,8 @@ services:
       context: login/server
     ports:
       - "8080:8080"
+    volumes:
+      - ./login/server/routes/sensors.json:/usr/src/app/routes/sensors.json
 
   login_client:
     build:

@@ -1,6 +1,13 @@
 const express = require("express");
 const router = express.Router();
 const Sensor = require("../models/sensor");
+const fs = require('fs');
+const { MongoClient } = require('mongodb');
+
+const filePath = './routes/sensors.json';
+const mongoURI = 'mongodb://mongodb:27017/alertas';
+const collectionName = 'sensors';
+
 
 // Ruta para obtener todos los sensores
 router.get("/", async (req, res) => {
@@ -28,43 +35,30 @@ router.post("/", async (req, res) => {
     }
 });
 
-// Función para generar un código aleatorio
-const generarCodigoAleatorio = () => {
-    const caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-    let codigo = "";
+const { ObjectId } = require('mongodb');
 
-    for (let i = 0; i < 6; i++) {
-        const randomIndex = Math.floor(Math.random() * caracteres.length);
-        codigo += caracteres.charAt(randomIndex);
-    }
-
-    return codigo;
-};
-
-const llenarBaseDeDatos = async () => {
+async function insertDocuments() {
     try {
-        // Eliminar todos los datos existentes en la colección de sensores
         await Sensor.deleteMany({});
 
-        // Crear 50 datos aleatorios de sensores
-        const datosSensores = [];
-        for (let i = 0; i < 50; i++) {
-            const sensorId = i + 1;
-            const codigo = generarCodigoAleatorio();
-            datosSensores.push({ sensorId, codigo });
+        const fileData = fs.readFileSync(filePath, 'utf8');
+        const documents = JSON.parse(fileData);
+
+        const client = new MongoClient(mongoURI, { useUnifiedTopology: true });
+        await client.connect();
+        const db = client.db();
+
+        for (const document of documents) {
+            document._id = ObjectId(document._id);
+            await db.collection(collectionName).insertOne(document);
         }
 
-        // Insertar los datos aleatorios en la base de datos
-        await Sensor.insertMany(datosSensores);
-
-        console.log("Base de datos llenada exitosamente.");
+        await client.close();
+        console.log('Documents successfully inserted.');
     } catch (error) {
-        console.error("Error al llenar la base de datos:", error);
+        console.error('Error inserting documents:', error);
     }
-};
+}
 
-
-
-
-module.exports = llenarBaseDeDatos();
+insertDocuments();
 module.exports = router;
