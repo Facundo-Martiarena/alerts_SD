@@ -17,8 +17,6 @@ Sigue los pasos a continuación para ejecutar la aplicación y realizar pruebas.
 ### Pasos a Seguir
 
 1. Clona el repositorio a tu máquina local.
-   
-   [Repositorio a clonar](https://github.com/Facundo-Martiarena/alerts_SD)
 
 2. Navega hasta el directorio del proyecto.
 

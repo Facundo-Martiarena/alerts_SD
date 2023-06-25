@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="067f3488-d4da-44a4-b312-63f6d5247217" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/jmeter/SistemasDistribuidos.jmx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jmeter/prueba_de_carga.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/server/routes/sensors.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/server/routes/sensorRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/server/routes/sensorRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/statistics/charts/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/statistics/charts/routes/users.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +193,7 @@
       <workItem from="1687471796142" duration="3117000" />
       <workItem from="1687476089030" duration="1871000" />
       <workItem from="1687478142889" duration="10201000" />
-      <workItem from="1687640665735" duration="22585000" />
+      <workItem from="1687640665735" duration="22986000" />
     </task>
     <servers />
   </component>
